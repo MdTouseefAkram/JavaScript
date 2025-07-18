@@ -1,0 +1,8 @@
+{
+    "name": "ABC",
+    "age": 30,
+    "isMarried": false,
+    "data": null,
+    "skills": ["HTML", "CSS"],
+    "hobby":{}
+}
