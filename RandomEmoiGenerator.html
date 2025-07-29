@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        marquee{
+            font-size: 90px;
+        }
+        section{
+            height: 400px;
+            width: 500px;
+            border: solid;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 200px;
+        }
+        article{
+            text-align: center;
+        }
+        button{
+            padding: 10px 20px ;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <marquee behavior="" direction="" scrollamount="20">Random Emoji Generator</marquee>
+    <section class="emojiContainer">
+            😊
+    </section>
+    <article>
+            <button class="btn">Random Emoji</button>
+    </article>
+    <script>
+       const emojis = [
+  "🌟", "🚀", "🍕", "🐱", "🎉", "🌈", "🔥", "🍩", "🎮", "🦄",
+  "📚", "🎧", "🍉", "🧠", "⚡", "🌍", "🛸", "🐸", "🎨", "🤖",
+  "😎", "🥳", "💡", "🌸", "🍔", "🐶", "✈️", "🎬", "🌙", "🧊",
+  "🪐", "🧁", "🎁", "🕹️", "🎯", "👾", "🌴", "⛷️", "🎻", "🐧",
+  "🛹", "🍿", "🥶", "🐢", "🚴‍♂️", "🪴", "💫", "👽", "🧃", "🎈",
+  "🍇", "🍓", "🍦", "🥑", "🍒", "🦕", "🌵", "🐳", "🐝", "🧸",
+  "🎂", "🪅", "🐥", "💎", "🔮", "🪄", "🧙‍♂️", "👑", "🎩", "🦩",
+  "🌼", "🌻", "🦊", "🐺", "🐨", "🦁", "🦓", "🐘", "🦒", "🐫",
+  "🚂", "🚁", "🚤", "🛴", "🚌", "🚓", "🛸", "🚠", "🎡", "🎢",
+  "🎠", "🎪", "🕺", "💃", "🎭", "🖼️", "🛍️", "💼", "📷", "📱"
+];
+
+        let btn = document.querySelector('.btn')
+        let emc = document.querySelector('.emojiContainer')
+        btn.onclick = function(){
+                let random = Math.floor(Math.random()*emojis.length)
+                emc.textContent = emojis[random]
+        }
+
+    </script>
+</body>
+</html>

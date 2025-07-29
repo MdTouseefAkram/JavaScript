@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .diceContainer{
+            height: 500px;
+            width: 80vw;
+    /* border: solid;   */
+    margin: auto; 
+    display: flex;      
+    justify-content: center;
+    align-items: end;
+}
+.dice{
+    width: 35%;
+    height: 80%;
+    border: 2px solid black;
+    background-color: antiquewhite;
+    margin: 0px 20px;
+  
+}
+.dice img{
+    height: 100%;
+    width: 100%;
+}
+.btnContainer{
+    /* border: solid; */
+    width: max-content;
+    margin: auto;
+}
+.output{
+    font-size: 100px;
+    text-align: center;
+}
+button{
+    font-size: 40px;
+    padding: 10px 20px;
+}
+    </style>
+</head>
+<body>
+    <section class="diceContainer">
+         <div class="dice dice1">
+            <img src="./imgs/dice1.png" class="img1" alt="">
+         </div>
+         <div class="dice dice2">
+            <img src="./imgs/dice2.png" class="img2" alt="">
+         </div>
+    </section>
+    <div class="btnContainer">
+        <div class="output">0</div>
+        <button class="roll">Roll</button>
+    </div>
+    <script src="./DiceGame.js"></script>r
+</body>
+</html>

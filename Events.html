@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+         .gp{
+            height: 500px;
+            width: 600px;
+            border: 2px solid black;
+            background-color: yellow;
+            padding: 100px;
+        } 
+         .p{
+            height: 100%;
+            width: 100%;
+            border: solid;
+            background-color: blueviolet;
+            padding: 50px;
+        }
+        .c{
+            background-color: red;
+            height: 100%;
+            width: 100%;
+
+        } 
+         .demo{
+            height: 400px;
+            width: 400px;
+            margin: auto;
+            border: solid;
+            background-color: red;
+         }
+    </style>
+</head>
+<body>
+    <h1 class="text">Events</h1>
+    <button class="Demo">
+            Click Me
+    </button>
+    <button onclick="console.log('This is a button clicked by using event attribute')">Click Me </button> -->
+   <button onclick="fun()">Function Button</button>
+
+<!-- ! EventBubbling/Capturing -->
+ <div class="gp">
+    <div class="p">
+        <div class="c"></div>
+    </div>
+ </div>
+ <!-- <div class="demo">
+
+ </div>
+ <!-- ! keyboard events -->
+  <input type="text" class="inp"> 
+    <!-- ! form events -->
+     <form action="" class="form">
+        <input type="text" class="username">
+        <input type="password" class="password">
+        <button>Submit</button>
+     </form>
+
+
+
+    <script src="./Events.js"></script>
+
+</body>
+</html>
