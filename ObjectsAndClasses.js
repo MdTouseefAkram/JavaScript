@@ -231,6 +231,32 @@ function introduce(greeting, city) {
 const message = introduce.apply(person, ["Hello", "New York"]);
 console.log(message); // Hello, I'm John Doe from New York.
 
+//! call, apply, bind
+function display(month, year){
+    console.log(this.uName); //this points to global object
+    console.log(this.age);
+    console.log(month,year);
+}
+//object
+let u1 = {
+    uName:"abc",
+    age:20
+}
+//! call
+display.call(u1, "Jan",2025); //abc 20 Jan 2025
+
+//! apply
+display.apply(u1, ["June", 2024]); //abc 20 June 2024
+
+//! bind
+let bFun = display.bind(u1, "Sept", 2023); // bind returns a new function
+bFun(); //abc 20 sept 2023 // code reusability is there.
+
+//! call is faster than apply and bind.
+//! call acepts n number of arguments. call is faster than apply an bind.
+//! apply accepts only 2 arguments , 1st is the object to which this keyword should point and 2nd is an array of arguments.
+//! bind accepts n number of argumnets but it returns a new function which can be called later. Here code reusability is there.
+
 
 //! prototype inheritance
 function Student(sname , sage , phy , che , maths){
